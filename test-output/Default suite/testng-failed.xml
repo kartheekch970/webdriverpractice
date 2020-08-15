@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webdriverpractice.synchronization.implicitwait.WebDriverImplicitWaitExample">
+      <class name="_22_webdriverpractice.pageobjects.loadablecomponent.BasicTestsRefactored">
         <methods>
-          <include name="secondButtonsWithImplicitWait"/>
-          <include name="setupBrowser"/>
-          <include name="resetImplicitWait"/>
-          <include name="setUpDriver"/>
-          <include name="tearDown"/>
+          <include name="getPage"/>
+          <include name="setupTest"/>
+          <include name="chooseToCodeInCppOnDesktop"/>
+          <include name="chooseToCodeInJavaOnTheServerFromCombosSyncOnAjaxBusyExample"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- webdriverpractice.synchronization.implicitwait.WebDriverImplicitWaitExample -->
+      </class> <!-- _22_webdriverpractice.pageobjects.loadablecomponent.BasicTestsRefactored -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -10,6 +10,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -24,7 +25,12 @@ public class WindowsExerciseTest extends TestUtils {
 	@BeforeClass
 	public void setUpDriver() {
 		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+		
+		//set headless mode - make it true/false to test both ways of windowhandles
+		ChromeOptions options = new ChromeOptions();
+		options.setHeadless(true);
+		
+		driver = new ChromeDriver(options);
 	}
 	
 	@BeforeMethod
